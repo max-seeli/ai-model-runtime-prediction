@@ -6,3 +6,10 @@ For a detailed task description look at the [Kaggle challenge](https://www.kaggl
 
 ## Data
 The TpuGraphs Dataset is described in detail in the [paper](https://arxiv.org/abs/2308.13490) from Google
+
+## Approaches 
+
+### Tile
+We get node level embeddings by concatenating the feature vectors with the opcodes using an embedding layer for the opcodes. Together with the edge index we use a GNN and mean pooling to compute a graph level embedding. This is then concatenated with the configuration and put through a final linear layer to reduce to a runtime.
+
+### Layout
