@@ -13,3 +13,4 @@ The TpuGraphs Dataset is described in detail in the [paper](https://arxiv.org/ab
 We get node level embeddings by concatenating the feature vectors with the opcodes using an embedding layer for the opcodes. Together with the edge index we use a GNN and mean pooling to compute a graph level embedding. This is then concatenated with the configuration and put through a final linear layer to reduce to a runtime.
 
 ### Layout
+For this problem we have vastly more available data which makes it more difficult to work and train with it.
